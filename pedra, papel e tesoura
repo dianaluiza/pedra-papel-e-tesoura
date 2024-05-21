@@ -1,0 +1,20 @@
+class jogando():
+    def __init__(self, jogador1,jogador2):
+        self.jogador1 = jogador1
+        self.jogador2 = jogador2
+    def jogar(self):
+        print("vamos jogar pedra, papel e tesoura")
+        print("digite 1 para pedra")
+        print("digite 2 para papel")
+        print("digite 3 para tesoura")
+
+        jogador1 = int(input("jogador 1 faça sua jogada! 1, 2 ou 3: "))
+        jogador2 = int(input("jogador 2 faça sua jogada! 1, 2 ou 3: "))
+
+        if jogador1 == jogador2:
+            resultado = "empate"
+        elif (jogador1 == 1 and jogador2 == 3) or (jogador1 == 2 and jogador2 == 1) or (jogador1 == 3 and jogador2 == 2):
+            resultado = self.jogador1,"jogador 1 venceu!!"
+        else:
+            resultado = self.jogador2,"jogador 2 venceu!!"
+        print(resultado)
